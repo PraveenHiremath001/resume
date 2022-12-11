@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CVsort : Home</title>
+    <title>CVSORT : Home</title>
     <link rel="stylesheet" href="style.css">
+
+     <link rel="stylesheet" href="style2.css"> 
+
+    <link rel="shortcut icon"  href="img/mylogo.png">
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" 
     referrerpolicy="no-referrer" />
-
+    
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Kolker+Brush&family=Lexend+Deca:wght@200&family=Pathway+Gothic+One&family=Raleway:wght@100&family=Red+Hat+Text:wght@300&family=Roboto+Mono:wght@100&family=Tinos&display=swap" rel="stylesheet">
      
 </head>
-<body>
+
+
+
+<body class=" blur-body">
+<div class="blur-div">
     <nav class="navbar">  
-        <label class="logo"> <span class="cv">CV</span><span class="sort"><em>sort</em></span></label>
-        
+        <!-- <label class="logo"> <span class="cv">CV</span><span class="sort"><em>sort</em></span></label> -->
+        <div class="logo-flex">
+            <img class="cvsort-logo" src="img/mylogo.png" alt="Logo">
+            <p><span class="cv">CV</span><span class="sort">sort</span></p>
+        </div>
         <a href="#" class="toggle-btn">
             <span class="bar"></span>
             <span class="bar" id="second"></span>
@@ -27,12 +38,18 @@
             <ul> 
                 <li><a class="active" href="#">home</a></li>                  
                 <li><a href="#">skills</a></li>
-                <li><a href="#">Login</a></li>
                 <li><a href="#">Contact</a></li>
+                <li><a href="#" class="nav-login-btn  loginbtn">Login</a></li>
             </ul>
-          
         </div>
+        
     </nav> 
+
+    
+
+
+
+
    <div class="maindiv">
     <div class="sub1">
       <div class="heading">
@@ -49,19 +66,43 @@
         </div>
     </div>
    </div>
+<!-- intro text -->
+
+<div class="intro-text">
+    <h1>A Free, Quick and Easy Way to Create Your Professional Resume.</h1>
+    <div class="intro-text-flex">
 
    
-    
+      <div class="feture-icon">
+        <img src="feature icon.png" alt="">
+
+      </div>
+                     
+    <div class="notes">
+         <h3><i class="fa-sharp fa-solid fa-check fa-2x right-icon"></i> 10+ Professional Resume Templates</h3>
+         <p>Choose from over thirty modern and professional templates. All of which can be customized to your liking</p>
+
+         <h3><i class="fa-sharp fa-solid fa-check fa-2x right-icon"></i> Fast and Easy to Use</h3>
+         <p>Our free resume builder lets you easily and quickly create a resume using our resume wizard.</p>
+
+         <h3><i class="fa-sharp fa-solid fa-check fa-2x right-icon"></i> Robust Text Editor</h3>
+         <p>Our text editor has everything you need to customize your resume. Choose different fonts, sizes, bullets and much more.</p>
+
+         <h3><i class="fa-sharp fa-solid fa-check fa-2x right-icon"></i> Download your resume as PDF</h3>
+         <p>Download your resume and send it straight to the hiring manager. Whatever format you choose, we’ve got you covered.</p>
+    </div>
+</div>
+
+</div>
 
 
 
    <div class="middle">
-      <h2><span class="cell">Select your Template</h2>
-        
+      <h2><span class="cell">Top Resume Template</h2>
    </div>
 
 <!-- Swiper -->
-<div class="bdy">
+<div class="bdy main-body acti">
     <link rel="stylesheet" href="swiper-bundle.min.css">
      <!--
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />-->
@@ -79,7 +120,7 @@
                         <h4>Basic</h4>
                     </div>
                     <div class="card-link">
-                        <button type="button">Select</button>
+                       <a href="template1.html"><button  type="button" >Select</button></a>
                     </div>
                 </div>
             </div>
@@ -157,6 +198,7 @@
 <!-- swiper code end -->
 
 
+
 <!--Footer-->
 <div class="bdyy">
     <footer>
@@ -199,17 +241,42 @@
     <e>Copyright © 2022 CVsort All Right Reserved</e>
 </div>
 <!--Footer end-->
+</div>
+<!-- blurdiv -->
+</div>            
+
+
+<!-- pop up login window -->
+<div class="popup-container active">
+    <div class="close-icon">
+        <i class="fa-solid fa-xmark  close-icon" ></i>        
+    </div>
+    <h4>Login to explore more</h4>
+    <label for="email">Enter Email</label>
+    <input type="email" name="email" id="" placeholder="Enter Email" class="input">
+    <label for="email">Enter Password</label>
+    <input type="email" name="email" id="" placeholder="Enter Password" class="input">
+    <button class="popup-btn">Login</button>
+    <p>New user? <a href="#" class="signup">Sign Up</a></p>
+</div>
+<!-- pop up login window -->
+
+
+
+
 </body>
 <script type="text/javascript">
-    const toggleBtn=document.getElementsByClassName("toggle-btn")[0]
-    const navmenu=document.getElementsByClassName("nav-menu")[0] 
+    // const toggleBtn=document.getElementsByClassName("toggle-btn")[0]
+    // const navmenu=document.getElementsByClassName("nav-menu")[0] 
 
-    toggleBtn.addEventListener("click",()=>{
-        navmenu.classList.toggle("active")
-    })
+    // toggleBtn.addEventListener("click",()=>{
+    //     navmenu.classList.toggle("active")
+    // })
 </script>
 <!-- Swiper JS -->
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="swiper-bundle.min.js"></script>
+<!-- <script src="https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"></script> -->
 <script src="apps.js"></script>
+<script src="scrpt.js"></script>
 </html>
