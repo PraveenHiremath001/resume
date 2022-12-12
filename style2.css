@@ -22,11 +22,11 @@
 }
 .cvsort-logo
 {
-   width: 15px;
+   width: 25px;
 }
 .cvsort-logo img
 {
-   width: 15px;
+   width: 25px;
 }
 .popup-container.active
 {
@@ -334,5 +334,11 @@ label
         justify-content: center;
         display: flex;
     }
+     .main-body
+    {
+        overflow: hidden;
+        
+    }
+
 
 }
