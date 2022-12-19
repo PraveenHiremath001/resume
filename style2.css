@@ -290,7 +290,8 @@ label
     .intro-text .notes
     {
         margin: 10px;
-        padding-top: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
     .intro-text .notes p
     {
@@ -325,6 +326,15 @@ label
         align-items: center;
         justify-content: center;
         display: flex;
+    }
+    .main-body
+    {
+        overflow: hidden;
+        
+    }
+    body
+    {
+        overflow-x: hidden;
     }
 
 }

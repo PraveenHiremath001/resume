@@ -393,7 +393,15 @@ em
 
 }
 
-    
+.middle{
+    text-align: center;
+    color: #055d85;
+    width: 100%; 
+    padding: 5px 5px 5px 5px;
+    padding-top: 6px;
+    background: rgb(255, 255, 255);
+    border-bottom: 0.7px solid rgb(169, 169, 169);
+}
     
 
 
@@ -404,19 +412,17 @@ em
 
 /*Slider css*/
 
-
+/* 
 
 .container{
     width: 90%;
     padding: 34px 60px;
-    /* ------------------------------------------------------------------------ */
   }
 
   .container.active{
    width: 90%;
     padding: 34px 60px;
     visibility: hidden;
-    /* ------------------------------------------------------------------------ */
   }
 
   
@@ -526,7 +532,7 @@ em
     'Lucida Sans Regular', 
     'Lucida Grande', 'Lucida Sans Unicode', 
     Geneva, Verdana, sans-serif;
-}
+} */
 
 
 @media (max-width:991px)
@@ -762,3 +768,58 @@ p{
 
 }
 
+/* css for image template */
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: rgb(243, 243, 243); */
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.img-div
+{
+    margin: 10px;
+    height: 340px;
+    width: 220px;
+    background-color: #001c34;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0 15px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .3);
+
+}
+.container img
+{
+    width: 220px;
+    height: 300px;
+    padding: 5px;
+    padding-bottom: 0;
+    border-radius: 0 15px;
+}
+.img-div button
+{
+    background-color: #001c34;
+    width: 98%;
+    box-sizing: border-box;
+    padding: 8px;
+    color: white;
+    border-radius: 0 15px;
+    border: none;
+    letter-spacing: 1px;
+    
+}
+
+.img-div button:hover
+{
+  filter: brightness(160%);
+  cursor: pointer;
+}
+.img-div:hover
+{
+    background-color: #b1aeae;
+   
+}
