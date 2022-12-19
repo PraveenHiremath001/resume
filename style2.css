@@ -20,14 +20,6 @@
     margin-top: 30px;
 
 }
-.cvsort-logo
-{
-   width: 25px;
-}
-.cvsort-logo img
-{
-   width: 25px;
-}
 .popup-container.active
 {
     visibility: hidden;
@@ -335,22 +327,14 @@ label
         justify-content: center;
         display: flex;
     }
-<<<<<<< HEAD
     .main-body
-=======
-     .main-body
->>>>>>> 5a2b2d6efcf496902a8892b7898d1778675196d2
     {
         overflow: hidden;
         
     }
-<<<<<<< HEAD
     body
     {
         overflow-x: hidden;
     }
-=======
->>>>>>> 5a2b2d6efcf496902a8892b7898d1778675196d2
-
 
 }
